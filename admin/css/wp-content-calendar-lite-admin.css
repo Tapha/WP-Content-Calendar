@@ -1,0 +1,169 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ 
+ .calendar_wrapper {
+ 	padding: 0px;
+ }
+ 
+  .calendar_wrapper h1 {
+ 	margin-bottom: 50px;
+ }
+ 
+ #calendar {
+ 	width: 75%;
+ 	display: inline-block;
+ }
+ 
+ #s_u_box {
+    float: right;
+    display: inline-block;
+    height: 500px;
+    width: 21%;
+    margin-bottom: -140;
+    margin-right: 20px;
+}
+
+.wpcc_upsell {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+}
+
+#un-main {
+    font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+    border: 1px solid #DFDFDF;
+    padding-bottom: 1px;
+    border-radius: 4px;
+    height: 458px;
+    background: white;
+}
+
+.head-un-main {
+    position: relative;
+    height: 34px;
+    top: 0px;
+    font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-size: 14px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #DFDFDF;
+    background: #E9E9E9 -moz-linear-gradient(center top , #F4F4F4, #E9E9E9) repeat scroll 0% 0%;
+}
+
+#un-main .head-1-um {
+    float: none;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 0px;
+}
+
+.head-1-um span {
+	padding: 5px;
+	font-size: 17px;
+	position: relative;
+	top: 7px;
+	left: 1px;
+}
+
+head-un-area {
+	background: white;
+}
+
+/*Calendar*/
+
+.fc-day {
+	background: white;
+	padding: 5px;
+	height: 120%;
+}
+
+.fc td, .fc th {
+    border-style: solid;
+    border-width: 1px;
+    padding: 5.5px;
+    vertical-align: top;
+}
+
+.fc-event {
+    position: relative;
+    display: block;
+    font-size: 0.85em;
+    line-height: 1.3;
+    border-radius: 3px;
+    border: 1px solid rgb(182, 230, 252);
+    background-color: rgb(182, 230, 252);
+    font-weight: 400;
+}
+
+.fc-event, .fc-event:hover, .ui-widget .fc-event {
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+}
+
+.fc-day-grid-event .fc-content {
+    white-space: pre-line;
+    overflow: hidden;
+}
+
+.fc-day-grid-event {
+    margin: 1px 2px 0px;
+    padding: 4px 5px;
+}
+
+.fc-unthemed .fc-divider, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+    border-color: black;
+}
+
+.wpcc_post_manipulation_box {
+	font-size: 80%;
+}
+
+.wpcc_post_manipulation_box a {
+	text-decoration: none;
+}
+
+/*Partial*/
+
+#external-events .fc-event {
+		margin: 10px 10px;
+		padding: 10px;
+		cursor: pointer;
+}
+
+/*Custom Edit Box*/
+
+.wpcc_edit_buttons {
+	padding: 0em !important;
+	margin-top: 30px !important;
+	padding-bottom: 9px !important;
+}
+
+.wpcc_edit_box_save_button {
+	float: right;
+}
+
+.wpcc_edit_box_time {
+    width: 26% !important;
+}
+
+/*Custom New Post Box*/
+
+.wpcc_new_buttons {
+	padding: 0em !important;
+	margin-top: 30px !important;
+	padding-bottom: 9px !important;
+}
+
+.wpcc_new_box_post_button {
+	float: right;
+}
+
+.wpcc_new_box_time {
+    width: 26% !important;
+}
