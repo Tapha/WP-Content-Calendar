@@ -122,7 +122,7 @@ class Wp_Content_Calendar_Lite_Admin {
 		//Add first main calendar page
 		add_submenu_page( $menu_slug, 'Calendar', 'Calendar', 'manage_options', $menu_slug, array($this, 'show_wp_content_calendar_lite_page') );
 		//Add second calendar settings page
-		add_submenu_page( $menu_slug, 'Settings', 'Calendar Settings', 'manage_options', 'wp-content-calendar-lite-settings', array($this, 'show_wp_content_calendar_lite_page_settings') );
+		add_submenu_page( $menu_slug, 'Upgrade', 'Upgrade To Pro', 'manage_options', 'wp-content-calendar-lite-upgrade', array($this, 'show_wp_content_calendar_lite_page_upgrade'), 'dashicons dashicons-external' );
 	}
 	
 	public function wp_content_calendar_lite_create_posts_menu() {
@@ -139,8 +139,10 @@ class Wp_Content_Calendar_Lite_Admin {
 		require_once('partials/wp-content-calendar-lite-admin-display.php');
 	}
 	
-	public function show_wp_content_calendar_lite_page_settings() {
-		require_once('partials/wp-content-calendar-lite-admin-settings.php');
+	public function show_wp_content_calendar_lite_page_upgrade() {
+		echo '<script type="text/javascript">
+           		window.location = "https://wpcontentcalendar.com/"
+      		  </script>';
 	}
 	
 	public function show_wp_content_calendar_lite_post_page() {
